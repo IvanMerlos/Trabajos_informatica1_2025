@@ -21,6 +21,7 @@ int main()
     printf("|18.5 – 24.9        |Normal\n");
     printf("|25.0 – 29.9        |Sobrepeso\n");
     printf("|30.0 o más         |Obesidad\n");
+
     
     
     return 0;
