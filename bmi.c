@@ -2,7 +2,6 @@
 Realizar un programa en lenguaje C que solicite al usuario el ingreso de peso y altura y
 devuelva dicho índice y una tabla de referencia.
 *******************************************************************************/
-*******************************************************************************/
 #include <stdio.h>
 float peso, altura,resultado;
 
