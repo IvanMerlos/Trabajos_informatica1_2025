@@ -2,6 +2,7 @@
 Realizar un programa en lenguaje C que solicite al usuario el ingreso de peso y altura y
 devuelva dicho índice y una tabla de referencia.
 *******************************************************************************/
+*******************************************************************************/
 #include <stdio.h>
 float peso, altura,resultado;
 
@@ -11,6 +12,15 @@ int main()
     scanf("%f",&altura);
     printf("Ingrese el Peso (Kg): ");
     scanf("%f",&peso);
+    
+    while(altura<0 || peso<0){
+     printf("ERROR:Ingrese numeros *POSITIVOS*\n");
+        
+     printf("Ingrese la Altura (m): ");
+    scanf("%f",&altura);
+    printf("Ingrese el Peso (Kg): ");
+    scanf("%f",&peso);
+    }
     
     resultado = peso/(altura*altura);
     
@@ -37,4 +47,8 @@ else if(resultado>=30 ){
 else if(resultado<=18.5){
  printf("Tiene bajo peso\n");
  
+}
+    
+    
+    return 0;
 }
