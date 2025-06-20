@@ -15,14 +15,26 @@ int main()
     resultado = peso/(altura*altura);
     
     printf("Su índice de masa corporal es: %.2f \n",resultado);
-    
+     printf("\n");
     printf("|IMC                |Nivel de peso\n");
     printf("|Por debajo de 18.5 |Bajo peso\n");
     printf("|18.5 – 24.9        |Normal\n");
     printf("|25.0 – 29.9        |Sobrepeso\n");
     printf("|30.0 o más         |Obesidad\n");
-
-    
-    
-    return 0;
+printf("\n");
+if(resultado>=18.5 || resultado<=24.9){
+ printf("Tiene un peso normal\n");
+ 
+}
+else if(resultado>=25.0 || resultado<=29.9){
+ printf("Tiene un Sobrepeso\n");
+ 
+}
+else if(resultado>=30 ){
+ printf("Tiene Obesidad\n");
+ 
+}
+else if(resultado<=18.5){
+ printf("Tiene bajo peso\n");
+ 
 }
